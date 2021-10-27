@@ -1,0 +1,182 @@
+#order {
+	color: var(--color-16);
+	background: url("../img/patterns/background_pattern.svg"),
+	radial-gradient(circle, var(--color-26) 11%, rgba(0,0,0,0) 55%) -13vw 21vw no-repeat,
+	radial-gradient(circle, var(--color-27) 2%, rgba(0,0,0,0) 40%) 31vw -16vw no-repeat,
+	radial-gradient(circle, var(--color-27) 2%, rgba(0,0,0,0) 38%) -38vw -25vw no-repeat;
+	padding-bottom: 10vw;
+	background-size: 100%;
+}
+
+#order h2 {
+	display: block;
+	padding: 1vw;
+	text-align: center;
+	font-size: var(--font-size-6);
+	background-color: var(--color-17);
+}
+
+.timer {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	padding: 1vw;
+}
+
+.timer__text {
+	display: flex;
+	font-size: var(--font-size-8);
+	text-transform: var(--text-transform-1);
+	margin-right: 2vw;
+	padding: 2vw;
+}
+
+.order__table {
+	padding: 0 4vw 4vw;
+	margin: auto;
+	text-align: center;
+}
+
+.order__table td {
+	border: var(--color-27) 1.5vw solid;
+	padding: 1vw;
+	transition: 0.3s;
+}
+
+.order__sale-text,
+.order__sale-price,
+.order__price-text,
+.order__price {
+	font-size: var(--font-size-3);
+	text-transform: var(--text-transform-1);
+}
+
+.order__sale-text {
+	border-top-left-radius: 4vw;
+}
+
+.order__price .del {
+	position: relative;
+	left: 38%;
+	top: 1.2vw;
+	transform: rotate(10deg);
+	width: 5vw;
+	height: 0.3vw;
+	background-color: var(--color-28);
+}
+
+.order__image img {
+	width: 100%;
+}
+
+.order__form {
+	border-top-right-radius: 4vw;
+}
+
+.order__form input {
+	width: 30vw;
+	margin-bottom: 1vw;
+	font-size: var(--font-size-8);
+	text-align: center;
+	padding: 1vw;
+	color: var(--color-16);
+	background-color: var(--color-27);
+	border: none;
+	transition: 0.3s;
+}
+
+.order__name {
+	text-transform: var(--text-transform-2);
+}
+
+.order__form input[type="number"] {
+	-moz-appearance: textfield;
+}
+
+.order__tel::-webkit-inner-spin-button,
+.order__tel::-webkit-outer-spin-button {
+	-webkit-appearance: none;
+}
+
+.order__submit {
+	text-transform: var(--text-transform-1);
+}
+
+.order__submit:hover {
+	background-color: var(--color-26);
+	border-radius: 2vw;
+	animation: buzz 5s infinite alternate linear;
+}
+
+.order__form input:focus,
+.order__form input:hover {
+	border: 0.3vw solid var(--color-26);
+}
+
+.order__form:focus-within input {
+	width: 50vw;
+}
+
+.order__form input::placeholder {
+	color: var(--color-16);
+	text-transform: var(--text-transform-1);
+}
+
+.order__form input:focus::placeholder {
+	opacity: 0;
+}
+
+@keyframes buzz {
+	0% {
+		transform: rotate(-1deg) scale(1.02);;
+	}
+	10% {
+		transform: rotate(0deg);
+	}
+	20% {
+		transform: rotate(1deg) scale(1.02);;
+	}
+	30% {
+		transform: rotate(0deg);
+	}
+	40% {
+		transform: rotate(-1deg) scale(1.02);;
+	}
+
+	50% {
+		transform: rotate(0deg);
+	}
+
+	60% {
+		transform: rotate(1deg) scale(1.02);;
+	}
+
+	70% {
+		transform: rotate(0deg);
+	}
+
+	80% {
+		transform: rotate(-1deg) scale(1.02);;
+	}
+
+	90% {
+		transform: rotate(0deg);
+	}
+
+	100% {
+		transform: rotate(1deg) scale(1.02);
+	}
+}
+
+@media (max-width: 800px) {
+
+	#order {
+		background-size: 100%;
+	}
+
+	.order__sale-text,
+	.order__price-text,
+	.order__price {
+		font-size: var(--font-size-8);
+	}
+}

@@ -1,0 +1,30 @@
+.timer__box {
+    display: inline-block;
+    padding: 1vw;
+
+    border-radius: 0.8vw;
+    background-color: var(--color-17);
+}
+
+.timer__countdown {
+    display: flex;
+    align-items: center;
+    font-size: var(--font-size-6);
+}
+
+.time {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    height: 5vw;
+    width: 5vw;
+    margin-right: 0.5vw;
+
+    border-radius: 0.8vw;
+    background-color: var(--color-27);
+}
+
+.timer-suffix:not(div:nth-child(6)) {
+    margin-right: 3vw;
+}

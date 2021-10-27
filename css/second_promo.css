@@ -1,0 +1,123 @@
+.second-promo__title {
+	color: var(--color-16);
+	font-size: var(--font-size-8);
+	font-weight: var(--font-weight-1);
+	text-align: center;
+	text-transform: var(--text-transform-1);
+	background-color: var(--color-26);
+	padding: 1vw;
+}
+
+.second-promo__box {
+	display: flex;
+
+	color: var(--color-18);
+	font-size: var(--font-size-3);
+
+	background: radial-gradient(circle, var(--color-26) 0%, var(--color-27) 36%, var(--color-25) 100%) no-repeat -23.8vw 0;
+}
+.second-promo__prod-image-box {
+	display: flex;
+	width: 255vw;
+	padding: 2vw 0 0 2vw;
+}
+
+.second-promo__prod-image {
+	width: 100%;
+	background: url("../img/product/doctor.png") no-repeat bottom;
+	background-size: contain;
+}
+
+.second-promo__description {
+	padding: 2vw 4vw 2vw 1vw;
+	width: 100%;
+}
+
+.second-promo__description .promo-underline {
+
+}
+
+.second-promo__characteristic {
+	display: flex;
+	justify-content: center;
+
+	padding: 1vw;
+
+	background-color:  var(--color-26);
+}
+
+.second-promo__characteristic ul {
+	display: flex;
+	color: var(--color-16);
+	font-size: var(--font-size-2);
+}
+
+.second-promo__characteristic li {
+	display: flex;
+	align-items: center;
+	text-transform: var(--text-transform-1);
+	margin-right: 4vw;
+}
+
+.second-promo__characteristic li:before {
+	width: 6vw;
+	height: 4vw;
+	content:"";
+}
+
+.second-promo__characteristic > ul > li:nth-child(1):before {
+	background: url("../img/others/natural.png") no-repeat;
+	background-size: 4vw;
+}
+
+.second-promo__characteristic > ul > li:nth-child(2):before {
+	background: url("../img/others/check.png") no-repeat;
+	background-size: 4.5vw;
+}
+
+.second-promo__characteristic > ul > li:nth-child(3):before {
+	background: url("../img/others/clock.png") no-repeat;
+	background-size: 3vw;
+	background-position-x: 1vw;
+}
+
+@media (max-width: 800px) {
+
+	.second-promo__box {
+		display: block;
+
+		font-size: var(--font-size-8);
+		background-position: 0 -23vw;
+	}
+
+	.second-promo__prod-image-box {
+		display: flex;
+		height: 100vw;
+		width: 100%;
+		padding: 2vw 0 0 0;
+	}
+
+	.media-line {
+		height: 0.4vw;
+		background: radial-gradient(circle, var(--color-26) 0%, var(--color-27) 36%, rgba(0, 0, 0, 0) 80%) no-repeat;
+		background-position-x: 3.5vw;
+	}
+
+	.second-promo__characteristic ul {
+		font-size: var(--font-size-3);
+	}
+
+	.second-promo__characteristic ul li:before {
+		margin-right: 0.3vw;
+		width: 27%;
+	}
+
+	.second-promo__description {
+		font-size: var(--font-size-6);
+		padding: 2vw 4vw 5vw 3vw;
+	}
+
+	.second-promo__title {
+		font-size: var(--font-size-1);
+	}
+}

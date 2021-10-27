@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>LevelUp</title>
+    <link rel="stylesheet" href="css/common.css"/>
+    <link rel="stylesheet" href="css/promo.css"/>
+    <link rel="stylesheet" href="css/components.css"/>
+    <link rel="stylesheet" href="css/reviews.css"/>
+	<link rel="stylesheet" href="css/second_promo.css"/>
+	<link rel="stylesheet" href="css/order.css"/>
+    <link rel="stylesheet" href="css/countdown_timer.css"/>
+    <link rel="stylesheet" href="css/heart.css"/>
+    <link rel="stylesheet" href="css/footer.css"/>
+    <script type="text/javascript"  src="js/component_details_actions.js"></script>
+</head>
+<body>
+    <header></header>
+    <!-- promo section ============================================================================================= -->
+    <section class="promo">
+        <a href="#order" class="order-btn order-btn__position_1">
+            <div>заказать</div>
+        </a>
+        <div class="promo__header">
+            <h1 class="promo__title">LevelUp</h1>
+            <div class="promo__subtitle">Мощное средство для повышения потенции</div>
+        </div>
+        <div class="promo__content">
+            <div class="promo__image">
+                <img alt="levelup product" src="img/product/prod.png"/>
+            </div>
+            <div class="promo__features">
+                <ul>
+                    <li>Повышает выработку тестестерона в 8 раз</li>
+                    <li>Продлевает половой акт до 2-х часов</li>
+                    <li>Гарантирует мощную, устойчивую эрекцию в любом возрасте</li>
+                    <li>Продлевает твой оргазм на 15-20 секунд</li>
+                    <li>В 3 раза увеличивает количество спермы при эякуляции</li>
+                    <li>Увеличивает член до 35%</li>
+                    <li>Гарантирует высокую сексуальную активность</li>
+                    <li>Безвредно для сердечно-сосудистой системы</li>
+                </ul>
+            </div>
+        </div>
+        <div class="video-shadow">
+            <video id="background-video-heart" autoplay muted loop>
+                <source src="videos/heart.mp4" type="video/mp4">
+            </video>
+        </div>
+    </section>
+    <!-- promo section ends ======================================================================================== -->
+    <!-- components section ======================================================================================== -->
+    <section id="components">
+        <div class="components__box_left">
+            <div class="components__box">
+                <div class="components__btn" onclick="detailsToggle(this)"></div>
+                <div class="components__details deactive invisible">
+                    <div class="components__name">Муира-Пуама</div>
+                    Когда-то Муира-Пуама росла только в Бразилии, но нашим ученым удалось селекционировать
+                    разновидность эффективного сорта, способного расти на плантациях Восточного Китая.
+                    Специально культивированная разновидность Муиры-Пуама обладает натуральными природными
+                    свойствами стимуляции мужского либидо.
+                </div>
+                <div class="components__item"></div>
+                <div class="components__name_details">муира-пуама</div>
+            </div>
+            <div class="components__box">
+                <div class="components__btn" onclick="detailsToggle(this)"></div>
+                <div class="components__details deactive invisible">
+                    <div class="components__name">тонгкат али</div>
+                    Тонгкат Али, выращенный в самом сердце Восточного Китая, способен стимулировать рост пениса,
+                    благодаря своей уникальной системе микроэлементов. Мало того, Тонгкат Али – это известный
+                    стимулятор мужского либидо, так что хозяин выросшего члена найдет ему достойное применение.
+                </div>
+                <div class="components__item"></div>
+                <div class="components__name_details">тонгкат али</div>
+            </div>
+            <div class="components__box">
+                <div class="components__btn" onclick="detailsToggle(this)"></div>
+                <div class="components__details deactive invisible">
+                    <div class="components__name">трибулус террестрис</div>
+                    Трибулус террестрис вызывает мощный приток крови к пещеристому телу пениса, способствуя его увеличению.
+                </div>
+                <div class="components__item"></div>
+                <div class="components__name_details">трибулус террестрис</div>
+            </div>
+        </div>
+        <div class="prod-image">
+            <img alt="product" src="img/product/prod_with_shadow.png"/>
+            <img alt="pills" src="img/product/pills.png"/>
+        </div>
+        <div class="components__box_right">
+            <div class="components__box">
+                <div class="components__name_details">l-аргинин</div>
+                <div class="components__item"></div>
+                <div class="components__details deactive invisible">
+                    <div class="components__name">l-аргинин</div>
+                    Ключевой компонент, стимулирующий рост члена. В составе уникальной супер-формулы Manpotenc,
+                    L-аргинин стимулирует выработку свободного тестостерона и гормона потенции, вызывая быстрое
+                    увеличение размера пениса.
+                </div>
+                <div class="components__btn" onclick="detailsToggle(this)"></div>
+            </div>
+            <div class="components__box">
+                <div class="components__name_details">мускатный орех</div>
+                <div class="components__item"></div>
+                <div class="components__details deactive invisible">
+                    <div class="components__name">мускатный орех</div>
+                    В мускатном орехе содержится много кальция, йода, фосфора, марганца, железа, серы, магния,
+                    селена, кремния и других микроэлементов. Специя положительным образом влияет на мочеполовую систему
+                    мужчины, усиливая его качества как полового партнёра.
+                </div>
+                <div class="components__btn" onclick="detailsToggle(this)"></div>
+            </div>
+            <div class="components__box">
+                <div class="components__name_details">корень маки</div>
+                <div class="components__item"></div>
+                <div class="components__details deactive invisible">
+                    <div class="components__name">корень маки</div>
+                    Корень Маки усиляет действие других растительных компонентов супер-формулы Manpotenc.
+                    Он укрепляет пенис и является одним из ключевых ингредиентов запатентованной технологии
+                    ускоренного роста Manpotenc. В результате использования смеси компонентов и корня Маки
+                    объем пениса значительно увеличивается.
+                </div>
+                <div class="components__btn" onclick="detailsToggle(this)"></div>
+            </div>
+        </div>
+    </section>
+    <!-- components section ends =================================================================================== -->
+	<div id="middleOrderBtn">
+		<a href="#order" class="order-btn">
+	    	<div>заказать</div>
+	    </a>
+	</div>
+    <!-- reviews section =========================================================================================== -->
+    <section id="reviews">
+        <h2>Отзывы наших покупателей</h2>
+		<!-- static comments version =============================================================================== -->
+		<div class="reviews__box">
+        	<div class="reviews__user-photo">
+            	<img alt="user_photo" src="img/comment_photos/vasiliy_porshen.jpg"/>
+        	</div>
+           	<div class="reviews__content">
+            	<div class="reviews__user-name">Василий Поршень</div>
+            	<div class="reviews__text">
+					Эффект просто неожиданный! Член стоит как чугунный мост. Жена уже второй час лежит
+					обессиленная, а он все на шухере. Вот сижу... Жду пока проказник приляжет, отдохнет.
+				</div>
+            </div>
+        </div>
+		<div class="reviews__box">
+        	<div class="reviews__user-photo">
+            	<img alt="user_photo" src="img/comment_photos/igor_exsperimentator.jpg"/>
+        	</div>
+           	<div class="reviews__content">
+            	<div class="reviews__user-name">Игорь-экспериментатор</div>
+            	<div class="reviews__text">
+					Мне друг рассказывал про этот препарат. Говорил, что засунул пенис в полый кокос
+					до принятия капсул, а после принятия, его стержень стремительно вырос, что потрескал
+					всю скорлупу. К сожалению, кокос не развалился пополам, а пенис держит оборону уже вторую 
+					неделю, вытащить нереально. Подскажите пожалуйста, как помочь другу. 
+					И есть ли у кого лубрикант? Мне очень надо.
+				</div>
+            </div>
+        </div>
+		<div class="reviews__box">
+        	<div class="reviews__user-photo">
+            	<img alt="user_photo" src="img/comment_photos/vladislav_maksimov.jpg"/>
+        	</div>
+           	<div class="reviews__content">
+            	<div class="reviews__user-name">Владислав Максимов</div>
+            	<div class="reviews__text">
+					Вау! Просто вау! Мы с моим бойфрендом никогда не испытывали такие эмоушнс и ощущения.
+					Как бы это сказать... Мой парень после закидона таблосами стал диким, зверьем, машина
+					для секса, гончар от Бога. Я давно так не кричал от наслаждения. Ставлю самую большую
+					оценочку этим штучкам, и всем расскажу о них в Тик-Токе.
+				</div>
+            </div>
+        </div>
+		<div class="reviews__box">
+        	<div class="reviews__user-photo">
+            	<img alt="user_photo" src="img/comment_photos/assalym_bikmaev.jpg"/>
+        	</div>
+           	<div class="reviews__content">
+            	<div class="reviews__user-name">Ассалим Бикмаев</div>
+            	<div class="reviews__text">
+					Йа плоха знать рузке ясык но напишу два слов об этом коробке угодном Аллаху.
+					Майа жина думает что миня падминили говрит это не ты Ассалим Бикмаев это Шайтан в тибе.
+					Но йа то знаю что это настаящий йа толька с мужзскими силоми Аллаха.
+				</div>
+            </div>
+        </div>
+		<div class="reviews__box">
+        	<div class="reviews__user-photo">
+            	<img alt="user_photo" src="img/comment_photos/lord_varys.jpg"/>
+        	</div>
+           	<div class="reviews__content">
+            	<div class="reviews__user-name">Лорд Варис</div>
+            	<div class="reviews__text">
+					Никаких изменений! Я разочарован, опустощен!!!&#128544;
+				</div>
+            </div>
+        </div>
+		<div class="reviews__box">
+        	<div class="reviews__user-photo">
+            	<img alt="user_photo" src="img/comment_photos/vitaliy_tsal.jpg"/>
+        	</div>
+           	<div class="reviews__content">
+            	<div class="reviews__user-name">Виталий Цаль</div>
+            	<div class="reviews__text">
+					Всем привет кто дышит, это мой ввод на LevelUp. Как всегда лучшее средство для величайшего, 
+					просто Гений На Создателе. Восстановил человечнось, заплюсморалился, 
+					взял в руки топор, поймал на улице очередняру девочку 14.1, изверг микрочеликов, осознал легкость бытия. 
+					Работяги молодцы, годный контент скрафтили. Сервис качественный, шнырь-курьер доставил товар прямо в окно RoflanOry.
+				</div>
+            </div>
+        </div>
+		<!-- static comments version ends ========================================================================== -->
+        <!-- load comments from "js/load_comments.js" file ========================================================= -->
+    </section>
+    <!-- reviews section ends ====================================================================================== -->
+	<!-- second promo section ====================================================================================== -->
+	<section class="second-promo">
+        <h2 class="second-promo__title">специалисты рекомендуют</h2>
+		<div class="second-promo__box">
+			<div class="second-promo__prod-image-box">
+                <div class="second-promo__prod-image"></div>
+            </div>
+            <div class="media-line"></div>
+            <div>
+                <div class="second-promo__description">
+                    Препарат содержит специальную технологию мгновенного расширения, которая быстро доставляет все компоненты,
+                    стимулирующие рост прямо в пенис, что заставляет его расти до
+                    максимальных размеров!
+                    <br/><br/>
+                    Плюс уникальной технологии - повышение выработки организмом самого важного для мужчины
+                    гормона — тестостерона — в 8 раз.
+                    <br/><br/>
+                    Это гарантирует высокую сексуальную активность,
+                    быстрое возбуждение даже без активной стимуляции и максимальное наполнение кровью пещеристых
+                    тел полового члена. Как результат, ты получаешь увеличение члена, длительную, каменную эрекцию,
+                    увеличение количества спермы и продолжительности оргазма.
+                    <br/><br/>
+                    Твоя партнёрша будет кончать раз за разом и возбуждаться от одной только мысли о сексе с тобой.
+                    <br/><br/>
+                    И всё это без химии, без побочных эффектов и, главное,
+                    без малейшего вреда для сердечно-сосудистой
+                    системы! LevelUp эффективен в любом возрасте и для любого организма!
+                </div>
+            </div>
+		</div>
+		<div class="second-promo__characteristic">
+			<ul>
+				<li>100% натуральные ингридиенты</li>
+				<li>без побочных эффектов</li>
+				<li>эффективен в любом возрасте</li>
+			</ul>
+		</div>
+	</section>
+	<!-- second promo section ends ================================================================================= -->
+    <!-- order section ============================================================================================= -->
+    <section id="order">
+        <h2>LevelUp &#8211; мощное средство для повышения потенции</h2>
+        <div class="timer">
+            <div class="timer__text">Акция закончится через</div>
+            <div class="timer__box">
+                <div class="timer__countdown">
+                    <div class="timer__hours time"></div>
+                    <div class="timer-suffix">часов</div>
+                    <div class="timer__minutes time"></div>
+                    <div class="timer-suffix">минут</div>
+                    <div class="timer__seconds time"></div>
+                    <div class="timer-suffix">секунд</div>
+                </div>
+            </div>
+        </div>
+        <table class="order__table">
+            <tbody>
+            <tr>
+                <td class="order__sale-text">цена по акции</td>
+                <td class="order__sale-price">
+                    <div class="heart__box">
+                        <div class="heart__content">249&#8381;</div>
+                        <svg class="heart__item" viewBox="0 0 550.8 550.799" xml:space="preserve"><path d="M398.853,31.653c-50.876,0-95.876,31.151-123.453,69.542c-27.576-38.391-72.577-69.542-123.452-69.542C68.03,31.653,0,99.683,0,183.6c0,8.74,0.777,17.295,2.197,25.631c0,0.018,0,0.03,0,0.049c0,174.75,273.203,309.867,273.203,309.867S548.603,388.62,548.603,209.28c0-0.019,0-0.031,0-0.049c1.42-8.335,2.197-16.891,2.197-25.631C550.8,99.683,482.77,31.653,398.853,31.653z"/></svg>
+                    </div>
+                </td>
+                <td class="order__form" rowspan="3">
+                    <form>
+                        <div>
+                            <input class="order__name" placeholder="Имя" type="text"/>
+                        </div>
+                        <div>
+                            <input class="order__tel" placeholder="Телефон" type="number"/>
+                        </div>
+                        <div>
+                            <input class="order__submit" type="submit" value="заказать"/>
+                        </div>
+                    </form>
+                </td>
+            </tr>
+            <tr>
+                <td class="order__price-text">старая цена</td>
+                <td class="order__price">
+                    <div class="del"></div>
+                    2499&#8381;
+                </td>
+            </tr>
+            <tr>
+                <td class="order__image" colspan="2">
+                    <img alt="composition" src="img/product/prod-composition.png">
+                </td>
+            </tr>
+            </tbody>
+        </table>
+        <div class="credits">
+
+        </div>
+    </section>
+    <!-- order section ends ======================================================================================== -->
+</body>
+<footer>
+    <script type="text/javascript"  src="js/load_comments.js"></script>
+    <script type="text/javascript"  src="js/countdown_timer.js"></script>
+</footer>
+</html>

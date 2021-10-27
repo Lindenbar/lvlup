@@ -1,0 +1,45 @@
+:root {
+    --heart-size: 5vw;
+    --heart-resize-factor: 2;
+    --heart-beat-time: 1s;
+    --heart-font-size: 2vw;
+    --heart-font-resize-factor: 1.5;
+    --heart-font-beat-time: 1s;
+}
+
+.heart__box {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    height: calc(var(--heart-resize-factor) * var(--heart-size) * 1.2);
+    width: calc(var(--heart-resize-factor) * var(--heart-size) * 1.2);
+}
+
+.heart__item {
+    fill: var(--color-2);
+    height: var(--heart-size);
+    width: var(--heart-size);
+    animation: heart-beat var(--heart-beat-time) infinite alternate;
+}
+
+.heart__content {
+    position: absolute;
+    font-size: var(--font-size-2);
+    animation: font-beat var(--heart-font-beat-time) infinite alternate;
+    color: var(--color-3);
+}
+
+@keyframes heart-beat {
+    to {
+        width: calc(var(--heart-resize-factor) * var(--heart-size));
+        height: calc(var(--heart-resize-factor) * var(--heart-size));
+        fill: var(--color-3);
+    }
+}
+
+@keyframes font-beat {
+    to {
+        font-size: calc(var(--heart-font-size) * var(--heart-font-resize-factor));
+        color: var(--color-16);
+    }
+}

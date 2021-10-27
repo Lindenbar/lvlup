@@ -1,0 +1,7 @@
+.credits {
+    position: absolute;
+    z-index: 1;
+    height: 7vw;
+    width: 100%;
+    background-color: var(--color-17);
+}
